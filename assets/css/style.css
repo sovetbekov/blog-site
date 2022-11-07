@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color:#fbfbfb;
+
+    color: #1A202C;
+    font-family: 'Outfit', sans-serif;
+    margin: 50px 300px 0px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.error img{
+    border-radius: 5%;
+}
+
+.main{
+    min-height: 87vh;
+
+}
+
+
+.header {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;    
+    
+}
+
+@media (max-width: 800px) {
+    body {
+      margin: 50px 30px 0px;
+    }
+    .error img{
+        width: 280px;
+    }
+}
+
+.header .title-about {
+    align-content: flex-start;
+    width: 30%;
+}
+
+
+.header .title {
+    align-content: flex-start;
+    width: 30%;
+}
+
+.header .title p {
+    font-size: 30px;
+    font-weight: 550;
+    text-decoration: none;
+    color:#1A202C;
+    display: inline-block;
+    position: relative;
+}
+
+.header .title p:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #1A202C;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.header .title p:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.header .pages{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+.header .pages a {
+    margin-top: 40px;
+    margin-left: 40px;
+    text-decoration: none;
+    color:#1A202C;
+}
+
+.header .pages a:hover{
+    color:#000000;
+}
+
+
+
+
+
+
+.me p{
+    line-height: 25px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    margin-top: 25px;
+    padding: 0px;
+}
+
+.me #hobby{
+    line-height: 25px;
+    margin-top: 50px;
+    padding: 0px;
+    font-weight: 300;
+}
+
+.social{
+    margin-top: 30px;
+}
+.social a{
+    margin-right: 10px;
+}
+
+
+.posts{
+    margin-top: 150px;
+}
+
+.posts p{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.posts a{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.footer p{
+    margin-top: auto;
+
+    text-align: center;
+    color: #6C6C6C;
+    font-size: 12px;
+}
