@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap');
 
 body {
     background-color:#fbfbfb;
@@ -6,9 +6,6 @@ body {
     color: #1A202C;
     font-family: 'Outfit', sans-serif;
     margin: 50px 400px 0px;
-
-    
-
 }
 
 .dark-mode {
@@ -18,6 +15,7 @@ body {
 
 .error img{
     border-radius: 5%;
+    width: 600px;
 }
 
 .main{
@@ -26,6 +24,36 @@ body {
     min-height: 87vh;
 }
 
+.footer p{
+    margin-top: auto;
+
+    text-align: center;
+    color: #6C6C6C;
+    font-size: 12px;
+}
+
+.footer p span {
+    display: inline-block;
+    position: relative;
+}
+
+.footer p span:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #1A202C;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.footer p span:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 
 .header {
     max-width: 100%;
@@ -129,23 +157,43 @@ body {
 }
 
 .posts{
-    margin-top: 150px;
-}
-
-.posts p{
-    font-weight: 500;
+    margin-top: 50px;
     font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
 }
 
-.posts a{
-    font-weight: 500;
-    font-size: 20px;
+.posts .blogtitle{
+    margin-bottom: 50px;
+    font-weight: 600;
+
 }
 
-.footer p{
-    margin-top: auto;
+.posts .postwrap{
+    margin-bottom: 15px;
 
-    text-align: center;
-    color: #6C6C6C;
-    font-size: 12px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(185, 185, 188, 0.3);
+
+    display: flex;
+    flex-direction: row;
 }
+
+.posts .posttitle{
+    font-weight: 400;
+    width: 70%;
+}
+
+.posts .posttitle:hover{
+    font-weight: 600;
+}
+ 
+.posts .meta{
+    font-weight: 200;
+    width: 30%;
+    text-align: right;
+}
+
+
+
