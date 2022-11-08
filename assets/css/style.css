@@ -140,11 +140,12 @@ body {
     width: 70%;
 }
 
-.header .pages p {
+.header .pages a {
     margin-top: 40px;
     margin-left: 40px;
     text-decoration: none;
     cursor: pointer;
+    color: #1A202C;
 }
 
 .header .pages p:hover{
@@ -262,6 +263,11 @@ body {
 .post-names .posttitle{
     font-weight: 400;
     width: 70%;
+}
+
+.post-names .posttitle a{
+    text-decoration: none;
+    color: #1A202C;
 }
 
 .post-names .posttitle:hover{
