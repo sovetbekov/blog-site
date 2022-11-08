@@ -8,10 +8,32 @@ body {
     margin: 50px 400px 0px;
 }
 
-.dark-mode {
-    background-color: #1b1b1b;
+/* .dark-mode {
+    background-color: #0e0e0e;
     color: #fbfbfb;
+} */
+
+/* IDs */
+
+#tags{
+    background: #e2e2e2;
+    border-radius: 4px;
+    padding: 2px 4px;
 }
+#tags:hover{
+    color: #8783d1;
+}
+
+#keyword{
+    color: #8783d1;
+}
+#keyword:hover{
+    border-bottom: 1px solid #8783d1;
+}
+
+
+
+
 
 .error img{
     border-radius: 5%;
@@ -25,6 +47,7 @@ body {
 }
 
 .footer p{
+    margin-bottom: 30px;
     margin-top: auto;
 
     text-align: center;
@@ -86,7 +109,8 @@ body {
     font-size: 30px;
     font-weight: 550;
     text-decoration: none;
-    color:#1A202C;
+    cursor: pointer;
+    
     display: inline-block;
     position: relative;
 }
@@ -116,18 +140,22 @@ body {
     width: 70%;
 }
 
-.header .pages a {
+.header .pages p {
     margin-top: 40px;
     margin-left: 40px;
     text-decoration: none;
-    color:#1A202C;
+    cursor: pointer;
 }
 
-.header .pages a:hover{
+.header .pages p:hover{
     color:#000000;
 }
 
 
+.header .darkmode p{
+    margin-top: 30px;
+    margin-left: 30px;
+}
 
 
 
@@ -158,38 +186,89 @@ body {
 
 .posts{
     margin-top: 50px;
-    font-size: 20px;
 
     display: flex;
     flex-direction: column;
 }
 
-.posts .blogtitle{
+.post-names{
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.post-names .blog-title{
     margin-bottom: 50px;
     font-weight: 600;
+    font-size: 30px;
+}
+
+.posts .post-title{
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.posts .post-date{
+    margin-bottom: 15px;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+
+
+.posts .post-body{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+
+.posts .post-body .subtitle{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.posts .post-body ul li span{
+    background: #e2e2e2;
+    border-radius: 4px;
+    padding: 2px 4px;
 
 }
 
-.posts .postwrap{
-    margin-bottom: 15px;
+.posts .post-body ul li{
+    margin-bottom: 10px;
+}
 
-    padding-bottom: 5px;
+.header .pages a{
+    margin-top: 40px;
+}
+
+.post-names .postwrap{
+    margin-bottom: 20px;
+
+    padding-bottom: 10px;
     border-bottom: 1px solid rgba(185, 185, 188, 0.3);
 
     display: flex;
     flex-direction: row;
+
+    cursor: pointer;
 }
 
-.posts .posttitle{
+.post-names .posttitle{
     font-weight: 400;
     width: 70%;
 }
 
-.posts .posttitle:hover{
+.post-names .posttitle:hover{
     font-weight: 600;
 }
  
-.posts .meta{
+.post-names .meta{
     font-weight: 200;
     width: 30%;
     text-align: right;
