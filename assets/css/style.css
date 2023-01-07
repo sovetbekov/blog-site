@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
 
 body {
     background-color:#fbfbfb;
@@ -56,11 +57,11 @@ body {
 }
 
 .footer p{
-    margin-bottom: 30px;
+    margin-bottom: auto;
     margin-top: auto;
 
     text-align: center;
-    color:  #383737;
+    color: #383737;
     font-size: 12px;
 }
 
@@ -116,7 +117,7 @@ body {
 
 .header .title p {
     font-size: 30px;
-    font-weight: 550;
+    font-weight: 500;
     text-decoration: none;
     cursor: pointer;
     
