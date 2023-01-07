@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
 
 body {
     background-color:#fbfbfb;
 
-    color: #1A202C;
+    color: #0d0d0d;
     font-family: 'Outfit', sans-serif;
-    margin: 50px 400px 0px;
+    margin: 50px 465px 0px;
+
 }
 
 /* .dark-mode {
@@ -40,6 +43,12 @@ body {
     width: 600px;
 }
 
+.error a{
+    text-decoration: none;
+    color: #0d0d0d;
+    cursor: auto;
+}
+
 .main{
     display: flex;
     flex-direction: column;
@@ -51,7 +60,7 @@ body {
     margin-top: auto;
 
     text-align: center;
-    color: #6C6C6C;
+    color:  #383737;
     font-size: 12px;
 }
 
@@ -68,7 +77,7 @@ body {
     height: 1px;
     bottom: 0;
     left: 0;
-    background-color: #1A202C;
+    background-color: #333333;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -123,7 +132,7 @@ body {
     height: 3px;
     bottom: 0;
     left: 0;
-    background-color: #1A202C;
+    background-color: #0d0d0d;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -145,7 +154,11 @@ body {
     margin-left: 40px;
     text-decoration: none;
     cursor: pointer;
-    color: #1A202C;
+    color: #0d0d0d;
+}
+
+.header .pages a:hover {
+    color: #4d4d4d;
 }
 
 .header .pages p:hover{
@@ -207,7 +220,7 @@ body {
 .posts .post-title{
     margin-bottom: 20px;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .posts .post-date{
@@ -219,7 +232,7 @@ body {
 
 
 .posts .post-body{
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 300;
 }
 
